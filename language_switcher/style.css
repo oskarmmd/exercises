@@ -1,0 +1,17 @@
+header {
+  background-color: teal;
+  padding: 2em;
+}
+body {
+  background-color: bisque;
+}
+p {
+  background-color: lightblue;
+  padding: 4em;
+  margin: 0;
+}
+
+.footer {
+  background-color: orangered;
+  padding: 2em;
+}
