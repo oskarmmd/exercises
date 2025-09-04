@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      button {
+        margin: 10px;
+        padding: 20px 40px;
+        width: 300px;
+        font-size: 16px;
+      }
+      .display {
+        padding: 100px;
+      }
+      .hide {
+        display: none;
+        opacity: -1;
+        pointer-events: 0;
+      }
+
+      button {
+        opacity: 1;
+        transition: opacity 1s ease; /* fade-animation */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Gæt et talt mellem 1 og 100</h1>
+    <div id="display">Tryk start</div>
+    <button id="startbtn" onclick="start()">Start</button>
+    <button id="lowbtn" class="hide" onclick="lavere()">For højt</button>
+    <button id="highbtn" class="hide" onclick="højere()">For lavt</button>
+    <button id="correctbtn" class="hide" onclick="korrekt()">Korrekt</button>
+    <script src="script.js"></script>
+  </body>
+</html>
